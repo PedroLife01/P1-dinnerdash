@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+/* colors and images */
+:root {
+    --nav-links-color: #fff;
+    --button-hover-color: #878584;
+    --backoffice-menu-bg: #343a40;
+    --table-head-bg: #e9ecef;
+    --nav-link-hover-color: #f79800;
+    --footer-color: #e3e3e3;
+    --dark-layer: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6));
+    --edit-button-color: #ffa207;
+    --delete-button-color: #dc3545;
+    --pagination-active-bg: #007bff;
+    --header-bg-image: url(img_bg_backoffice_usuario.jpg);
+    }
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+ }
+  /* header styles */
+header {
+    background-image: var(--dark-layer), var(--header-bg-image);
+    background-size: cover;
+    background-position: center;    
+    height: 55vh;      
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--nav-links-color);    
+}
+
+
+  /* Menu Site */
+
+ .MenuSite {
+  margin-top: 30px;
+  margin-left: 52px;
+  margin-right: 52px;
+  word-spacing: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--nav-links-color)
+ }  
+
+.MenuNav a:visited {
+  color: var(--nav-links-color)
+
+}
+.MenuNav a:hover {
+  color: var(--nav-link-hover-color)
+
+}
+
+  /* Titulo BackOffice */
+ .BackOfficeTitulo {
+  margin-top: 200px;
+  margin-left: 52px;
+}
+
+  /* Menu BackOffice */
+nav.MenuDoBackoffice {
+    padding: 1rem 3.4%;    
+    background-color: var(--backoffice-menu-bg);
+    display: flex;
+    align-items: center;
+}
+a.MenuDoBackoffice {
+  color: var(--nav-links-color);
+  margin-left: 20px;
+  font-size: 0.8rem;
+}
+
+main {
+  min-height: 400px;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  border-spacing: 0;
+
+}
+thead {
+  background-color: var(--table-head-bg)  
+}
+tbody {
+  vertical-align: top;
+}
+
+th, td {
+  text-align: left;
+}
+
+th {
+  padding: 1rem;
+}
+
+td {
+  padding: 1rem 2rem;
+}
+.titulo {
+  margin-bottom: 2rem;
+  color: var(--pagination-active-bg);
+}
+.action_buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  column-gap: 1rem;
+  padding: 0.6rem 0;
+  width: 100%;
+}
+
+.text_button {
+  font-weight: bold;
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  cursor: pointer;
+}
+
+.EditButton {
+  color: var(--edit-button-color);
+}
+
+.DeleteButton {
+  color: var(--delete-button-color);
+}
+
+.EditButton:hover, .DeleteButton:hover {
+  color: var(--button-hover-color);
+}
+
+/* pagina */
+.pagina {
+  display: flex;
+  
+}
+
+.pagina button {
+  color: black;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: 1px solid #ddd;
+
+}
+
+.pagina button.active {
+  background-color: var(--pagination-active-bg);
+  color: white;
+  border: 1px solid var(--pagination-active-bg);
+}
+
+.pagina button:hover:not(.active) {
+  background-color: #ddd;
+}
+
+  /* footer styles */
+footer {
+    background-color: var(--footer-color);
+    min-height: 3rem;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
